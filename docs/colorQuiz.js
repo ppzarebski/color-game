@@ -73,7 +73,7 @@ for(var i = 0; i < squares.length; i++){
 		}
 	});
 };
-
+function changeColors(color){
 	for(var i = 0; i < squares.length; i++){
 		squares[i].style.backgroundColor = color;
 	}
@@ -87,7 +87,6 @@ function pickColor(){
 
 function generateRandomColors(num){
 	var arr = [];
-	//repeat num times
 	for(var i = 0; i < num; i++){
 		arr.push(randomColor());
 	}
